@@ -1,0 +1,59 @@
+.skills-section {
+  padding-top: 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.skills-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.4rem 1.6rem;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.skills-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 4px 20px var(--purple-glow);
+}
+
+.skills-card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.9rem;
+  letter-spacing: 0.01em;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  color: var(--purple-light);
+  font-size: 0.76rem;
+  font-weight: 500;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  transition: background 0.2s;
+}
+
+.skill-tag:hover {
+  background: rgba(139, 92, 246, 0.2);
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

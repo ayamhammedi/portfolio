@@ -1,0 +1,84 @@
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 0.5rem;
+}
+
+.exp-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.exp-year-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 56px;
+}
+
+.exp-year-badge {
+  width: 52px;
+  height: 52px;
+  background: var(--purple);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--white);
+  font-family: 'Fira Code', monospace;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+}
+
+.exp-line {
+  width: 2px;
+  flex: 1;
+  min-height: 24px;
+  background: linear-gradient(to bottom, var(--purple-dim), transparent);
+  margin: 6px 0;
+}
+
+.exp-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 1.2rem;
+  flex: 1;
+  transition: border-color 0.25s;
+}
+
+.exp-card:hover {
+  border-color: var(--border-hover);
+}
+
+.exp-role {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.exp-company {
+  font-size: 0.85rem;
+  color: var(--purple);
+  font-family: 'Fira Code', monospace;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+
+.exp-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 580px) {
+  .exp-year-col { display: none; }
+  .exp-card { margin-bottom: 1rem; }
+}
